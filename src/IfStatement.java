@@ -47,6 +47,7 @@ public class IfStatement {
         //Memakai Switch Lambda (tidak usah lagi memakai kata kunci break
         System.out.println("Anda Mendapatkan Hadiah ke-" + hadiah + " yaitu: ");
 
+
         switch (hadiah){
             case 1 -> System.out.println("Cumlaude + 1 juta rupiah");
             case 2,3 -> System.out.println("Mendapatkan 500rb rupiah");
@@ -55,5 +56,14 @@ public class IfStatement {
             }
         }
 
+        //Switch tanpa yield
+        String ucapan;
+        switch (index){
+            case "A" -> ucapan = "Cieeee dapet A";
+            case "B","C" -> ucapan = "Cieee dapet B/C";
+            case "D" -> ucapan = "cieeeeeee D";
+            default -> ucapan = "GA LULUS KOCAK LU!! MAU DIUCAPIN APAAN OKAWOKWAKOAW";
+        }
+        System.out.println(ucapan);
     }
 }
