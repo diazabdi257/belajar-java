@@ -2,8 +2,8 @@ public class IfStatement {
 
     public static void main(String[] args) {
 
-        var nilai = 10;
-        var absen = 55;
+        var nilai = 100;
+        var absen = 95;
         String index;
         int hadiah = 0;
 
@@ -65,5 +65,14 @@ public class IfStatement {
             default -> ucapan = "GA LULUS KOCAK LU!! MAU DIUCAPIN APAAN OKAWOKWAKOAW";
         }
         System.out.println(ucapan);
+
+        //Swtich dengan yield (jadi kyk return gitu gunanya
+        String pesan = switch (index){
+            case "A": yield "Selamat yaaa kamu sudah melakukan yang terbaik, nilai kamu A";
+            case "B", "C" : yield "Finally, u made it.. Congratulation";
+            case "D" : yield "congrats, gapapa kok yang penting kan lulus";
+            default: yield "Itsss okeee, next time sungguh sungguh !!";
+        };
+        System.out.println(pesan);
     }
 }
