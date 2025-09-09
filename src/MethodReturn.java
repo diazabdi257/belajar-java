@@ -5,6 +5,9 @@ public class MethodReturn {
         System.out.println(result1);
         System.out.println(sum(200,200));
         System.out.println("============");
+        System.out.println(hitung(20,"+",30));
+        System.out.println(hitung(50,"-",10));
+        System.out.println(hitung(50,"dibagi",10));
 
     }
 
@@ -13,6 +16,13 @@ public class MethodReturn {
         return total;
     }
 
+    static int hitung(int angka1, String operasi, int angka2){
+        switch (operasi){
+            case "+" : return angka1 + angka2;
+            case "-" : return angka1 - angka2;
+            default : return 0;
+        }
+    }
 
 
 }
